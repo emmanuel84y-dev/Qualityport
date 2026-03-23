@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Qualityport Roofing – Durable Roofing Solutions Across Nigeria</title>
+<meta name="description" content="Qualityport Roofing supplies and installs premium stone-coated roofing tiles and long-span aluminum roofing sheets across Nigeria. 50-year guarantee. Serving Abuja, Lagos & Onitsha." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* ─── CSS VARIABLES ─────────────────────────────── */
+  :root {
+    --navy:       #0B1F3A;
+    --navy-deep:  #071428;
+    --navy-light: #1A3558;
+    --orange:     #F26A1B;
+    --orange-hot: #FF7B2C;
+    --orange-pale:#FFF0E6;
+    --white:      #FFFFFF;
+    --off-white:  #F5F7FA;
+    --gray:       #8A9BB0;
+    --gray-light: #E4EAF2;
+    --text:       #1E2D40;
+    --shadow-sm:  0 2px 12px rgba(11,31,58,.08);
+    --shadow-md:  0 8px 32px rgba(11,31,58,.14);
+    --shadow-lg:  0 20px 60px rgba(11,31,58,.22);
+    --transition: 0.3s cubic-bezier(.4,0,.2,1);
+  }
+
+  /* ─── RESET ─────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Nunito', sans-serif; color: var(--text); background: var(--white); line-height: 1.7; overflow-x: hidden; }
+  img { max-width: 100%; display: block; }
+  a { text-decoration: none; color: inherit; }
+
+  /* ─── UTILITY ───────────────────────────────────── */
+  .container { width: 92%; max-width: 1140px; margin: 0 auto; }
+  .section-label {
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--navy);
+  }
+  .section-title span { color: var(--orange); }
+  .section-sub { font-size: 1.05rem; color: var(--gray); max-width: 540px; margin-top: 12px; }
+  .section-header { margin-bottom: 56px; }
+
+  /* ─── BUTTONS ───────────────────────────────────── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  .btn-primary { background: var(--orange); color: var(--white); box-shadow: 0 6px 24px rgba(242,106,27,.35); }
+  .btn-primary:hover { background: var(--orange-hot); transform: translateY(-2px); box-shadow: 0 10px 32px rgba(242,106,27,.45); }
+  .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.55); }
+  .btn-outline:hover { background: rgba(255,255,255,.12); border-color: var(--white); }
+  .btn-navy { background: var(--navy); color: var(--white); box-shadow: var(--shadow-sm); }
+  .btn-navy:hover { background: var(--navy-light); transform: translateY(-2px); }
+  .btn-wa { background: #25D366; color: var(--white); box-shadow: 0 6px 24px rgba(37,211,102,.3); }
+  .btn-wa:hover { background: #1ebe5a; transform: translateY(-2px); }
+  .btn-white { background: var(--white); color: var(--orange); font-weight: 700; box-shadow: 0 4px 20px rgba(0,0,0,.15); }
+  .btn-white:hover { background: var(--off-white); transform: translateY(-2px); }
+  .btn-white-out { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.7); }
+  .btn-white-out:hover { background: rgba(255,255,255,.12); }
+
+  /* ─── NAVBAR ────────────────────────────────────── */
+  #navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: background 0.4s, box-shadow 0.4s;
+  }
+  #navbar.scrolled { background: var(--navy-deep); box-shadow: 0 2px 24px rgba(0,0,0,.3); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+  .logo { display: flex; align-items: center; gap: 10px; }
+ .logo-image {width:50px; height: 50px;}
+ .logo-image img { width: 50px; height: 44px;  border-radius: 8px !important; object-fit: cover; overflow: hidden }
+  .logo-text { font-family: 'Barlow Condensed', sans-serif; font-size: 1.35rem; font-weight: 800; color: var(--white); line-height: 1.1; }
+  .logo-text span { color: var(--orange); }
+  .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,.82); font-size: 0.88rem; font-weight: 600; transition: color var(--transition); }
+  .nav-links a:hover { color: var(--orange); }
+  .nav-cta { margin-left: 8px; padding: 10px 22px; font-size: 0.88rem; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 26px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.35s cubic-bezier(.4,0,.2,1), opacity 0.25s ease; transform-origin: center; }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px; left: 0; right: 0;
+    background: var(--navy-deep);
+    padding: 24px;
+    z-index: 999;
+    border-top: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,.3);
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-menu ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .mobile-menu a { display: block; padding: 12px 0; color: rgba(255,255,255,.85); font-weight: 600; border-bottom: 1px solid rgba(255,255,255,.06); transition: color var(--transition); }
+  .mobile-menu a:hover { color: var(--orange); }
+  .mobile-menu .btn { width: 100%; justify-content: center; margin-top: 16px; padding: 14px 20px; }
+
+  /* ─── HERO ──────────────────────────────────────── */
+  #hero { position: relative; min-height: 100vh; display: flex; align-items: center; background: var(--navy-deep); overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background-image: url('hero-bg.jpg'); background-size: cover; background-position: center top; opacity: 0.22; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(7,20,40,.95) 45%, rgba(11,31,58,.7) 100%); }
+  .hero-decor { position: absolute; top: -100px; right: -120px; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(242,106,27,.15) 0%, transparent 70%); pointer-events: none; }
+  .hero-decor2 { position: absolute; bottom: -80px; left: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(242,106,27,.08) 0%, transparent 70%); pointer-events: none; }
+  .hero-content { position: relative; z-index: 2; padding: 120px 0 80px; max-width: 720px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(242,106,27,.15); border: 1px solid rgba(242,106,27,.35);
+    color: var(--orange); padding: 6px 16px; border-radius: 50px;
+    font-size: 0.82rem; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; margin-bottom: 24px;
+    animation: fadeUp 0.7s ease both;
+  }
+  .hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--orange); border-radius: 50%; animation: pulse 1.4s ease infinite; }
+  @keyframes pulse { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.5);opacity:.6} }
+  .hero-h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2.6rem, 6vw, 4.4rem); font-weight: 800; line-height: 1.08; color: var(--white); margin-bottom: 20px; animation: fadeUp 0.7s 0.15s ease both; }
+  .hero-h1 .accent { color: var(--orange); }
+  .hero-sub { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,.72); max-width: 560px; line-height: 1.75; margin-bottom: 36px; animation: fadeUp 0.7s 0.28s ease both; }
+  .hero-btns { display: flex; flex-wrap: wrap; gap: 14px; animation: fadeUp 0.7s 0.4s ease both; }
+  .hero-stats { display: flex; flex-wrap: wrap; gap: 32px; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,.1); animation: fadeUp 0.7s 0.52s ease both; }
+  .hero-stat { color: var(--white); }
+  .hero-stat .num { font-family: 'Barlow Condensed', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--orange); line-height: 1; }
+  .hero-stat .lbl { font-size: 0.85rem; color: rgba(255,255,255,.6); margin-top: 4px; }
+  @keyframes fadeUp { from { opacity:0; transform: translateY(28px); } to { opacity:1; transform: translateY(0); } }
+
+  /* ─── TRUST BAR ─────────────────────────────────── */
+  #trust { background: var(--orange); padding: 18px 0; }
+  .trust-inner { display: flex; flex-wrap: wrap; justify-content: center; }
+  .trust-item { display: flex; align-items: center; gap: 10px; padding: 8px 28px; color: var(--white); font-weight: 700; font-size: 0.9rem; border-right: 1px solid rgba(255,255,255,.3); }
+  .trust-item:last-child { border-right: none; }
+  .trust-item svg { width: 20px; height: 20px; flex-shrink: 0; fill: rgba(255,255,255,.85); }
+
+  /* ─── ABOUT ─────────────────────────────────────── */
+  #about { padding: 100px 0; background: var(--white); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+  .about-images { position: relative; height: 520px; flex-shrink: 0; }
+  .about-img-main { position: absolute; top: 0; left: 0; width: 72%; height: 78%; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg); z-index: 2; }
+  .about-img-main img { width: 100%; height: 100%; object-fit: cover; }
+  .about-img-secondary { position: absolute; bottom: 0; right: 0; width: 58%; height: 55%; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md); z-index: 3; border: 5px solid var(--white); }
+  .about-img-secondary img { width: 100%; height: 100%; object-fit: cover; }
+  .about-badge-float { position: absolute; bottom: 58px; left: -20px; z-index: 4; background: var(--orange); color: var(--white); border-radius: 16px; padding: 18px 22px; box-shadow: 0 8px 32px rgba(242,106,27,.35); text-align: center; min-width: 130px; }
+  .about-badge-float .badge-num { font-family: 'Barlow Condensed', sans-serif; font-size: 2.4rem; font-weight: 800; line-height: 1; }
+  .about-badge-float .badge-lbl { font-size: 0.78rem; font-weight: 700; opacity: .88; margin-top: 4px; line-height: 1.3; }
+  .about-content { display: flex; flex-direction: column; gap: 20px; }
+  .about-content .section-sub { max-width: 100%; }
+  .about-body { font-size: 0.95rem; color: var(--gray); line-height: 1.85; }
+  .about-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 4px; }
+  .about-pillar { display: flex; align-items: flex-start; gap: 12px; background: var(--off-white); border-radius: 14px; padding: 16px; }
+  .about-pillar-ico { width: 38px; height: 38px; flex-shrink: 0; background: var(--orange-pale); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .about-pillar-ico svg { width: 20px; height: 20px; fill: var(--orange); }
+  .about-pillar h5 { font-size: 0.88rem; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .about-pillar p { font-size: 0.78rem; color: var(--gray); line-height: 1.5; }
+
+  /* ─── SERVICES ──────────────────────────────────── */
+  #services { padding: 100px 0; background: var(--off-white); }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+  .service-card { background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition); }
+  .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+  .service-img { height: 210px; object-fit: cover; width: 100%; display: block; }
+  .service-body { padding: 28px; }
+  .service-icon { width: 52px; height: 52px; background: var(--orange-pale); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+  .service-icon svg { width: 26px; height: 26px; fill: var(--orange); }
+  .service-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.45rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+  .service-card p { font-size: 0.93rem; color: var(--gray); line-height: 1.7; margin-bottom: 20px; }
+  .service-benefits { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .service-benefits li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; font-weight: 600; color: var(--text); }
+  .service-benefits li::before {
+    content: '';
+    width: 18px; height: 18px; flex-shrink: 0;
+    background: var(--orange) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E") no-repeat center / 12px;
+    border-radius: 50%;
+    margin-top: 1px;
+  }
+
+  /* ─── WHY US ─────────────────────────────────────── */
+  #why { padding: 100px 0; background: var(--navy); position: relative; overflow: hidden; }
+  #why::before { content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(242,106,27,.12) 0%, transparent 70%); }
+  #why .section-title { color: var(--white); }
+  #why .section-sub { color: rgba(255,255,255,.55); }
+  #why .section-label { color: var(--orange); }
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 52px; }
+  .why-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 32px 26px; transition: background var(--transition), transform var(--transition); }
+  .why-card:hover { background: rgba(255,255,255,.09); transform: translateY(-4px); }
+  .why-num { font-family: 'Barlow Condensed', sans-serif; font-size: 3rem; font-weight: 800; color: rgba(242,106,27,.25); line-height: 1; margin-bottom: 12px; }
+  .why-card h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+  .why-card p { font-size: 0.88rem; color: rgba(255,255,255,.5); line-height: 1.65; }
+
+  /* ─── PRODUCTS ──────────────────────────────────── */
+  #products { padding: 100px 0; background: var(--white); }
+  .products-sub { margin-bottom: 64px; }
+  .products-sub-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--navy); margin-bottom: 32px; display: flex; align-items: center; gap: 14px; }
+  .products-sub-title::after { content: ''; flex: 1; height: 2px; background: var(--gray-light); border-radius: 2px; }
+  .products-sub-title span { color: var(--orange); }
+  .roof-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px; }
+  .roof-card { background: var(--white); border-radius: 20px; box-shadow: var(--shadow-sm); overflow: hidden; transition: transform var(--transition), box-shadow var(--transition); display: flex; flex-direction: column; }
+  .roof-card:hover { transform: translateY(-7px); box-shadow: var(--shadow-lg); }
+  .carousel { position: relative; overflow: hidden; height: 220px; background: var(--gray-light); flex-shrink: 0; }
+  .carousel-track { display: flex; height: 100%; transition: transform 0.45s cubic-bezier(.4,0,.2,1); }
+  .carousel-slide { position: relative; width: 100%; height: 100%; flex-shrink: 0; overflow: hidden; }
+  .carousel-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; border-radius: 50%; background: rgba(11,31,58,.55); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 5; transition: background var(--transition); backdrop-filter: blur(4px); }
+  .carousel-btn:hover { background: var(--orange); }
+  .carousel-btn svg { width: 16px; height: 16px; fill: white; }
+  .carousel-btn.prev { left: 10px; }
+  .carousel-btn.next { right: 10px; }
+  .carousel-dots { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 5; }
+  .carousel-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,.5); cursor: pointer; transition: background var(--transition), transform var(--transition); border: none; }
+  .carousel-dot.active { background: var(--orange); transform: scale(1.3); }
+  .single-img { height: 220px; overflow: hidden; flex-shrink: 0; }
+  .single-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .roof-card:hover .single-img img { transform: scale(1.05); }
+  .roof-card-body { padding: 22px 22px 26px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+  .roof-card-body h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--navy); }
+  .roof-card-body p { font-size: 0.89rem; color: var(--gray); line-height: 1.7; }
+  .roof-tag { display: inline-block; margin-top: auto; background: var(--orange-pale); color: var(--orange); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 50px; width: fit-content; }
+  .acc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 22px; }
+  .acc-card { background: var(--off-white); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition); display: flex; flex-direction: column; }
+  .acc-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+  .acc-img { aspect-ratio: 4 / 3; overflow: hidden; background: var(--gray-light); }
+  .acc-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .acc-card:hover .acc-img img { transform: scale(1.07); }
+  .acc-body { padding: 18px 18px 22px; flex: 1; }
+  .acc-body h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 7px; }
+  .acc-body p { font-size: 0.83rem; color: var(--gray); line-height: 1.65; }
+
+  /* ─── TESTIMONIALS ──────────────────────────────── */
+  #testimonials { padding: 100px 0; background: var(--off-white); }
+  .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 52px; }
+  .testi-card { background: var(--white); border-radius: 20px; padding: 32px; box-shadow: var(--shadow-sm); position: relative; transition: box-shadow var(--transition), transform var(--transition); }
+  .testi-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+  .testi-card::before { content: '"'; position: absolute; top: 16px; right: 24px; font-family: 'Barlow Condensed', sans-serif; font-size: 5rem; color: var(--orange); opacity: .15; line-height: 1; }
+  .stars { display: flex; gap: 3px; margin-bottom: 16px; }
+  .stars span { color: var(--orange); font-size: 1rem; }
+  .testi-text { font-size: 0.93rem; color: var(--text); line-height: 1.75; margin-bottom: 24px; }
+  .testi-author { display: flex; align-items: center; gap: 14px; }
+  .testi-avatar { width: 46px; height: 46px; border-radius: 50%; background: var(--orange); display: flex; align-items: center; justify-content: center; color: var(--white); font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; flex-shrink: 0; }
+  .testi-name { font-weight: 700; font-size: 0.92rem; color: var(--navy); }
+  .testi-role { font-size: 0.8rem; color: var(--gray); margin-top: 2px; }
+
+  /* ─── PROJECTS ──────────────────────────────────── */
+  #projects-section { padding: 100px 0; background: var(--white); }
+  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+  .projects-grid .gallery-item:first-child { grid-column: 1 / 3; }
+  .projects-grid .gallery-item { aspect-ratio: 3 / 4; }
+
+  /* ─── GALLERY ────────────────────────────────────── */
+  #gallery { padding: 100px 0; background: var(--off-white); }
+  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 48px; }
+  .gallery-grid .gallery-item:nth-child(1) { grid-column: span 2; }
+  .gallery-grid .gallery-item:nth-child(5) { grid-column: span 2; }
+  .gallery-grid .gallery-item { aspect-ratio: 3 / 4; }
+
+  /* ─── SHARED GALLERY ITEM ───────────────────────── */
+  .gallery-item { border-radius: 14px; overflow: hidden; position: relative; cursor: pointer; }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
+  .gallery-item:hover img { transform: scale(1.06); }
+
+  /* Projects section shows overlay label on hover */
+  .projects-grid .gallery-item .gallery-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(7,20,40,.75) 0%, transparent 55%);
+    opacity: 0; transition: opacity var(--transition);
+    display: flex; align-items: flex-end; padding: 18px;
+  }
+  .projects-grid .gallery-item:hover .gallery-overlay { opacity: 1; }
+  .gallery-label { color: var(--white); font-weight: 700; font-size: 0.88rem; }
+
+  /* Gallery section has no overlay — just image zoom */
+  .gallery-grid .gallery-item .gallery-overlay { display: none; }
+
+  /* ─── CTA BAND ──────────────────────────────────── */
+  #cta-band { background: var(--orange); padding: 80px 0; position: relative; overflow: hidden; }
+  #cta-band::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+  .cta-inner { position: relative; z-index: 1; text-align: center; }
+  .cta-inner h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; color: var(--white); margin-bottom: 14px; }
+  .cta-inner p { color: rgba(255,255,255,.82); font-size: 1.05rem; margin-bottom: 36px; }
+  .cta-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+  /* ─── QUOTE SECTION ─────────────────────────────── */
+  #quote { padding: 100px 0; background: var(--navy); position: relative; overflow: hidden; }
+  #quote::before { content: ''; position: absolute; top: -180px; right: -180px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(242,106,27,.13) 0%, transparent 70%); pointer-events: none; }
+  #quote .section-label { color: var(--orange); }
+  #quote .section-title { color: var(--white); }
+  #quote .section-sub { color: rgba(255,255,255,.55); }
+  .quote-layout { display: grid; grid-template-columns: 1fr 1.15fr; gap: 64px; align-items: start; margin-top: 52px; }
+  .quote-info { display: flex; flex-direction: column; gap: 28px; }
+  .quote-info-item { display: flex; gap: 16px; align-items: flex-start; }
+  .quote-info-ico { width: 46px; height: 46px; flex-shrink: 0; background: rgba(242,106,27,.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+  .quote-info-ico svg { width: 22px; height: 22px; fill: var(--orange); }
+  .quote-info-item h4 { font-weight: 700; font-size: 0.92rem; color: var(--white); margin-bottom: 4px; }
+  .quote-info-item p { font-size: 0.86rem; color: rgba(255,255,255,.5); line-height: 1.65; }
+  .quote-info-item a { color: var(--orange); font-weight: 600; }
+  .quote-form-card { background: var(--white); border-radius: 24px; padding: 36px 32px 32px; box-shadow: var(--shadow-lg); }
+  .quote-form-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+  .quote-form-card h3 span { color: var(--orange); }
+  .quote-form-card > p { font-size: 0.87rem; color: var(--gray); margin-bottom: 24px; }
+
+  /* ─── FORM FIELDS ───────────────────────────────── */
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+  .form-group label { font-size: 0.82rem; font-weight: 700; color: var(--navy); letter-spacing: .3px; }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%; padding: 12px 14px;
+    border: 1.5px solid var(--gray-light); border-radius: 10px;
+    font-family: 'Nunito', sans-serif; font-size: 0.9rem; color: var(--text);
+    background: var(--white); outline: none; resize: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    -webkit-appearance: none; appearance: none; box-sizing: border-box;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--orange); box-shadow: 0 0 0 3px rgba(242,106,27,.12);
+  }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: var(--gray); opacity: 0.75; }
+  .form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A9BB0' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; cursor: pointer;
+  }
+  .form-group textarea { min-height: 96px; line-height: 1.65; }
+  .form-submit { width: 100%; justify-content: center; padding: 15px 24px; font-size: 1rem; margin-top: 4px; border-radius: 12px; cursor: pointer; }
+  .form-note { text-align: center; font-size: 0.78rem; color: var(--gray); margin-top: 10px; }
+
+  /* ─── CONTACT ───────────────────────────────────── */
+  #contact { padding: 100px 0; background: var(--white); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; margin-top: 52px; }
+  .contact-info { display: flex; flex-direction: column; gap: 28px; }
+  .contact-item { display: flex; gap: 18px; align-items: flex-start; }
+  .contact-ico { width: 50px; height: 50px; flex-shrink: 0; background: var(--orange-pale); border-radius: 14px; display: flex; align-items: center; justify-content: center; }
+  .contact-ico svg { width: 24px; height: 24px; fill: var(--orange); }
+  .contact-item h4 { font-weight: 700; font-size: 0.9rem; color: var(--navy); margin-bottom: 4px; }
+  .contact-item p { font-size: 0.92rem; color: var(--gray); line-height: 1.6; }
+  .contact-item a { color: var(--orange); font-weight: 600; transition: opacity var(--transition); }
+  .contact-item a:hover { opacity: .75; }
+  .contact-map { border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md); height: 360px; }
+  .contact-map iframe { width: 100%; height: 100%; border: none; display: block; }
+  .contact-btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .social-links { display: flex; gap: 12px; flex-wrap: wrap; }
+  .social-link { width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; transition: transform var(--transition), opacity var(--transition); flex-shrink: 0; }
+  .social-link:hover { transform: translateY(-3px); opacity: .85; }
+  .social-link svg { width: 20px; height: 20px; }
+  .social-link.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+  .social-link.facebook { background: #1877F2; }
+  .social-link.whatsapp { background: #25D366; }
+
+  /* ─── FOOTER ────────────────────────────────────── */
+  footer { background: var(--navy-deep); padding: 60px 0 28px; color: rgba(255,255,255,.55); }
+  .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .footer-brand p { font-size: 0.88rem; margin-top: 14px; line-height: 1.75; max-width: 280px; }
+  .footer-col h5 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 16px; letter-spacing: .5px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col a { font-size: 0.88rem; transition: color var(--transition); }
+  .footer-col a:hover { color: var(--orange); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 24px; font-size: 0.82rem; flex-wrap: wrap; gap: 10px; }
+  .footer-bottom a { color: var(--orange); }
+  .footer-social { display: flex; gap: 10px; margin-top: 18px; }
+  .footer-social a { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: transform var(--transition), opacity var(--transition); }
+  .footer-social a:hover { transform: translateY(-3px); opacity: .85; }
+  .footer-social a svg { width: 18px; height: 18px; }
+  .footer-social a.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+  .footer-social a.facebook { background: #1877F2; }
+  .footer-social a.whatsapp { background: #25D366; }
+
+  /* ─── FLOATING BUTTONS ──────────────────────────── */
+  .float-wa { position: fixed; bottom: 28px; right: 28px; z-index: 900; width: 58px; height: 58px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 28px rgba(37,211,102,.45); animation: float 3s ease-in-out infinite; }
+  .float-wa:hover { transform: scale(1.12); }
+  .float-wa svg { width: 30px; height: 30px; fill: white; }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+  .float-call { position: fixed; bottom: 98px; right: 28px; z-index: 900; width: 50px; height: 50px; border-radius: 50%; background: var(--orange); display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(242,106,27,.4); transition: transform var(--transition); }
+  .float-call:hover { transform: scale(1.1); }
+  .float-call svg { width: 22px; height: 22px; fill: white; }
+
+  /* ─── RESPONSIVE ────────────────────────────────── */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .nav-cta.desktop { display: none; }
+    .hamburger { display: flex; }
+    .about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .about-images { height: 380px; }
+    .about-badge-float { left: 0; bottom: 12px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .quote-layout { grid-template-columns: 1fr; gap: 40px; }
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    .projects-grid .gallery-item:first-child { grid-column: 1 / 3; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid .gallery-item:nth-child(1) { grid-column: span 2; }
+    .gallery-grid .gallery-item:nth-child(5) { grid-column: span 1; }
+  }
+
+  @media (max-width: 600px) {
+    .trust-inner { flex-direction: column; align-items: center; }
+    .trust-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.2); width: 100%; justify-content: center; }
+    .trust-item:last-child { border-bottom: none; }
+    .hero-stats { gap: 20px; }
+    .footer-top { grid-template-columns: 1fr; gap: 32px; }
+    .contact-btns { flex-direction: column; }
+    .about-images { height: 300px; }
+    .about-pillars { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .projects-grid .gallery-item:first-child { grid-column: 1; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-grid .gallery-item:nth-child(1),
+    .gallery-grid .gallery-item:nth-child(5) { grid-column: 1; }
+  }
+
+  @media (max-width: 480px) {
+    .quote-form-card { padding: 24px 18px 22px; }
+    .form-row { grid-template-columns: 1fr; }
+    .mobile-menu { padding: 20px 16px; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ════ NAVBAR ════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="logo">
+        <div class="logo-image"><img src="logo.jpg" alt="logo"></div>
+      <div class="logo-text">Qualityport<br><span>Roofing</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#projects-section">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#quote" class="btn btn-primary nav-cta desktop">
+      <svg style="width:16px;height:16px;fill:white" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Request a Quote
+    </a>
+    <div class="hamburger" id="ham" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+    <li><a href="#products" onclick="toggleMenu()">Products</a></li>
+    <li><a href="#projects-section" onclick="toggleMenu()">Projects</a></li>
+    <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+  </ul>
+  <a href="#quote" onclick="toggleMenu()" class="btn btn-primary" style="margin-top:16px;width:100%;justify-content:center;">
+    <svg style="width:17px;height:17px;fill:white;flex-shrink:0" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    Request a Quote
+  </a>
+</div>
+
+<!-- ════ HERO ════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-decor"></div>
+  <div class="hero-decor2"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">Nigeria's Trusted Roofing Experts</div>
+      <h1 class="hero-h1">Durable, <span class="accent">Leak-Free</span> Roofing Solutions<br>That Last for Decades</h1>
+      <p class="hero-sub">We supply and install premium stone-coated roofing tiles and long-span aluminum roofing sheets across Nigeria — Abuja, Lagos &amp; Onitsha.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">
+          <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Get a Free Quote
+        </a>
+        <a href="https://wa.me/2347031949248?text=Hello%2C%20I%20need%20a%20roofing%20quote" class="btn btn-outline" target="_blank">
+          <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">50yr</div><div class="lbl">Anti-Fade Guarantee</div></div>
+        <div class="hero-stat"><div class="num">500+</div><div class="lbl">Projects Completed</div></div>
+        <div class="hero-stat"><div class="num">3</div><div class="lbl">Cities Served</div></div>
+        <div class="hero-stat"><div class="num">100%</div><div class="lbl">No-Leak Guarantee</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TRUST BAR ════ -->
+<div id="trust">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        50-Year Anti-Fade Guarantee
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        No-Leak Guarantee
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Abuja, Lagos &amp; Onitsha
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        Professional Installation Team
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ ABOUT ════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Split Images -->
+      <div class="about-images">
+        <div class="about-img-main">
+          <img loading="lazy" src="about1.jpg" alt="Qualityport team at work" />
+        </div>
+        <div class="about-img-secondary">
+          <img loading="lazy" src="about2.jpg" alt="Premium stone-coated roofing" />
+        </div>
+        <div class="about-badge-float">
+          <div class="badge-num">10+</div>
+          <div class="badge-lbl">Years of<br>Excellence</div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content">
+        <div>
+          <span class="section-label">Who We Are</span>
+          <h2 class="section-title">Nigeria's Most <span>Trusted</span> Roofing Company</h2>
+        </div>
+        <p class="section-sub">Built on a foundation of quality, integrity, and technical expertise, Qualityport Roofing has been protecting Nigerian homes and businesses for over a decade.</p>
+        <p class="about-body">We are a premium roofing company specialising in the supply and installation of stone-coated roofing tiles and long-span aluminum roofing sheets. From our base in Abuja, we serve clients across Lagos, Onitsha, and beyond — delivering world-class roofing solutions that combine beauty with uncompromising durability.</p>
+        <p class="about-body">Every project we undertake is backed by manufacturer guarantees, a professional installation team, and our personal commitment to your satisfaction. We don't just build roofs — we build trust.</p>
+        <div class="about-pillars">
+          <div class="about-pillar">
+            <div class="about-pillar-ico">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            </div>
+            <div>
+              <h5>Licensed &amp; Certified</h5>
+              <p>Fully licensed installers with certified materials</p>
+            </div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-ico">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div>
+              <h5>50-Year Guarantee</h5>
+              <p>Industry-leading anti-fade colour guarantee</p>
+            </div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-ico">
+              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <div>
+              <h5>Expert Team</h5>
+              <p>Skilled roofers with years of field experience</p>
+            </div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-ico">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <h5>Nationwide Reach</h5>
+              <p>Serving Abuja, Lagos &amp; Onitsha</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="#contact" class="btn btn-primary">
+            <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Get in Touch
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ SERVICES ════ -->
+<section id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Our <span>Roofing</span> Services</h2>
+      <p class="section-sub">From supply to installation, we deliver roofing solutions built for Nigerian weather and built to last.</p>
+    </div>
+    <div class="services-grid">
+
+      <!-- Service 1 -->
+      <div class="service-card">
+        <img loading="lazy" class="service-img" src="service1.jpg" alt="Stone-Coated Roofing Tiles" />
+        <div class="service-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 12L12 3l9 9v10H3V12zm2 1.5V20h5v-4h4v4h5v-6.5L12 6 5 13.5z"/></svg>
+          </div>
+          <h3>Stone-Coated Roofing Tiles</h3>
+          <p>Premium stone-coated roofing tiles (Gerald Roofing) designed for beauty and long-term durability. These roofs offer a modern finish while withstanding harsh weather conditions.</p>
+          <ul class="service-benefits">
+            <li>50-year color guarantee</li>
+            <li>Elegant and stylish appearance</li>
+            <li>Highly durable and weather-resistant</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <img loading="lazy" class="service-img" src="service2.jpg" alt="Long-Span Aluminum Roofing Sheets" />
+        <div class="service-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          </div>
+          <h3>Long-Span Aluminum Roofing Sheets</h3>
+          <p>Strong and cost-effective aluminum roofing sheets ideal for both residential and commercial buildings. Built to handle large structures with ease.</p>
+          <ul class="service-benefits">
+            <li>Lightweight and rust-resistant</li>
+            <li>Affordable and long-lasting</li>
+            <li>Suitable for large structures</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <img loading="lazy" class="service-img" src="service3.jpg" alt="Sales and Installation of Water Collectors" />
+        <div class="service-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zm0 18c-3.35 0-6-2.57-6-6.2 0-2.34 1.95-5.44 6-9.14 4.05 3.7 6 6.79 6 9.14 0 3.63-2.65 6.2-6 6.2z"/></svg>
+          </div>
+          <h3>Sales &amp; Installation of Water Collectors</h3>
+          <p>We supply and install high-quality rainwater collection systems designed to integrate seamlessly with your roofing structure — capturing and managing water efficiently for any property.</p>
+          <ul class="service-benefits">
+            <li>Supply of premium water collector units</li>
+            <li>Professional installation service</li>
+            <li>Seamless integration with all roof types</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ WHY US ════ -->
+<section id="why">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Why Qualityport</span>
+      <h2 class="section-title">Built on Trust &amp;<br><span>Proven Expertise</span></h2>
+      <p class="section-sub">We don't just install roofs — we build lasting protection for your home and investment.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <h4>Experienced Specialists</h4>
+        <p>Our team brings years of field expertise across residential, commercial, and industrial roofing projects in Nigeria.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <h4>Premium Quality Materials</h4>
+        <p>We source only certified, high-grade roofing materials — the same ones that carry manufacturer guarantees for decades.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <h4>Fast Delivery in Abuja</h4>
+        <p>Order today and get your roofing materials delivered promptly within Abuja. We keep stock ready for quick turnaround.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <h4>Clean Installation</h4>
+        <p>Our installation teams work professionally and leave your property clean. No mess, no shortcuts — just quality workmanship.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05</div>
+        <h4>Customer Satisfaction First</h4>
+        <p>We don't close a job until you're fully satisfied. From consultation to final inspection, we've got you covered.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06</div>
+        <h4>Nationwide Reach</h4>
+        <p>Operating across Abuja, Lagos, and Onitsha — we bring premium roofing solutions wherever your project is located.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PRODUCTS ════ -->
+<section id="products">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Stock</span>
+      <h2 class="section-title">Our <span>Products</span></h2>
+      <p class="section-sub">Premium roofing products and accessories — everything you need from roof to ridge.</p>
+    </div>
+
+    <!-- SUB-SECTION 1: OUR ROOFS -->
+    <div class="products-sub">
+      <div class="products-sub-title"><span>Our</span> Roofs</div>
+      <div class="roof-cards-grid">
+
+        <!-- Bond Roofs (3 images) -->
+        <div class="roof-card">
+          <div class="carousel" data-index="0">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img loading="lazy" src="bond1.jpg" alt="Bond Roof — Classic overlapping panel finish" />
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="bond2.jpg" alt="Bond Roof — Weather-resistant stone coating" />
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="bond3.jpg" alt="Bond Roof — Installed on modern residential home" />
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel(this,-1)" aria-label="Previous">
+              <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </button>
+            <button class="carousel-btn next" onclick="moveCarousel(this,1)" aria-label="Next">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+            <div class="carousel-dots">
+              <button class="carousel-dot active" onclick="goToSlide(this,0)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,1)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,2)"></button>
+            </div>
+          </div>
+          <div class="roof-card-body">
+            <h3>Bond Roofs</h3>
+            <p>Strong and durable, our Bond Roofs are designed with overlapping patterns to ensure maximum protection and longevity.</p>
+            <span class="roof-tag">Stone-Coated</span>
+          </div>
+        </div>
+
+        <!-- Millano Roofs (4 images) -->
+        <div class="roof-card">
+          <div class="carousel" data-index="0">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img loading="lazy" src="millano1.jpg" alt="Millano Roof — Elegant tile-effect metal panel" />
+
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="millano2.jpg" alt="Millano Roof — Premium surface finish close-up" />
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="millano3.jpg" alt="Millano Roof — Wide-span installation on large building" />
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="millano4.jpg" alt="Millano Roof — Completed roofing project" />
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="millano5.jpg" alt="Millano Roof — Classic colourway on residential build" />
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="millano6.jpg" alt="Millano Roof — Panel edge and profile detail" />
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel(this,-1)" aria-label="Previous">
+              <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </button>
+            <button class="carousel-btn next" onclick="moveCarousel(this,1)" aria-label="Next">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+            <div class="carousel-dots">
+              <button class="carousel-dot active" onclick="goToSlide(this,0)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,1)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,2)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,3)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,4)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,5)"></button>
+            </div>
+          </div>
+          <div class="roof-card-body">
+            <h3>Millano Roofs</h3>
+            <p>Elegant and stylish, Millano Roofs combine modern metal durability with classic tile aesthetics.</p>
+            <span class="roof-tag">Premium Tile</span>
+          </div>
+        </div>
+
+        <!-- Shingle Roofs (5 images) -->
+        <div class="roof-card">
+          <div class="carousel" data-index="0">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img loading="lazy" src="shingle1.jpg" alt="Shingle Roof — Asphalt shingle texture detail" />
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="shingle2.jpg" alt="Shingle Roof — Multi-layer shingle installation" />
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="shingle3.jpg" alt="Shingle Roof — Neat ridge and slope finish" />
+              </div>
+              <div class="carousel-slide">
+                <img loading="lazy" src="shingle4.jpg" alt="Shingle Roof — Full roof view on family home" />
+              </div>
+
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel(this,-1)" aria-label="Previous">
+              <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </button>
+            <button class="carousel-btn next" onclick="moveCarousel(this,1)" aria-label="Next">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+            <div class="carousel-dots">
+              <button class="carousel-dot active" onclick="goToSlide(this,0)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,1)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,2)"></button>
+              <button class="carousel-dot" onclick="goToSlide(this,3)"></button>
+            </div>
+          </div>
+          <div class="roof-card-body">
+            <h3>Shingle Roofs</h3>
+            <p>Affordable and versatile, Shingle Roofs come in various materials and textures for every home.</p>
+            <span class="roof-tag">Multi-Material</span>
+          </div>
+        </div>
+
+        <!-- Classic Roofs (single image, no carousel) -->
+        <div class="roof-card">
+          <div class="single-img">
+            <img loading="lazy" src="classic.jpg" alt="Classic Roof" />
+          </div>
+          <div class="roof-card-body">
+            <h3>Classic Roofs</h3>
+            <p>Timeless designs that provide reliable protection and a traditional look for any building.</p>
+            <span class="roof-tag">Timeless Design</span>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /products-sub roofs -->
+
+    <!-- SUB-SECTION 2: ACCESSORIES -->
+    <div class="products-sub" style="margin-bottom:0">
+      <div class="products-sub-title"><span>Accessories</span></div>
+      <div class="acc-grid">
+
+        <div class="acc-card">
+          <div class="acc-img">
+            <img loading="lazy" src="vent.jpg" alt="Roof Air Vent" />
+          </div>
+          <div class="acc-body">
+            <h4>Roof Air Vent</h4>
+            <p>Promotes proper attic ventilation, reducing heat build-up and moisture that can damage your roof structure over time.</p>
+          </div>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-img">
+            <img loading="lazy" src="nails.jpg" alt="Treated Nails" />
+          </div>
+          <div class="acc-body">
+            <h4>Treated Nails</h4>
+            <p>Galvanized and rust-resistant nails engineered for roofing applications — designed to hold strong through decades of weather exposure.</p>
+          </div>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-img">
+            <img loading="lazy" src="ridge.jpg" alt="Ridge Cap" />
+          </div>
+          <div class="acc-body">
+            <h4>Ridge Cap</h4>
+            <p>Seals the apex of your roof with a clean, finished look while providing critical protection against wind and water infiltration.</p>
+          </div>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-img">
+            <img loading="lazy" src="gutter.jpg" alt="Gutter" />
+          </div>
+          <div class="acc-body">
+            <h4>Gutter</h4>
+            <p>Heavy-duty gutters that channel rainwater away from your foundation, protecting your walls and surrounding landscape effectively.</p>
+          </div>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-img">
+            <img loading="lazy" src="sealant.jpg" alt="Repair Kit / Sealant" />
+          </div>
+          <div class="acc-body">
+            <h4>Repair Kit &amp; Sealant</h4>
+            <p>Professional-grade sealants and patch kits to fix minor leaks and cracks before they become costly problems.</p>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /products-sub accessories -->
+
+  </div>
+</section>
+
+<!-- ════ PROJECTS ════ -->
+<section id="projects-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Our Work</span>
+      <h2 class="section-title">Projects We're <span>Proud Of</span></h2>
+      <p class="section-sub">A selection of completed roofing installations delivered across Nigeria.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="gallery-item">
+        <img loading="lazy" src="project1.jpg" alt="Residential roofing project Abuja" />
+        <div class="gallery-overlay"><span class="gallery-label">Residential – Abuja</span></div>
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="project2.jpg" alt="Stone-coated tile installation Lagos" />
+        <div class="gallery-overlay"><span class="gallery-label">Stone-Coated Tiles – Lagos</span></div>
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="project3.jpg" alt="Long-span aluminum roofing Onitsha" />
+        <div class="gallery-overlay"><span class="gallery-label">Long-Span Aluminium – Onitsha</span></div>
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="project4.jpg" alt="Commercial building roofing Abuja" />
+        <div class="gallery-overlay"><span class="gallery-label">Commercial Building – Abuja</span></div>
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="project5.jpg" alt="Modern home roofing Lagos" />
+        <div class="gallery-overlay"><span class="gallery-label">Modern Home – Lagos</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ GALLERY ════ -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Photo Gallery</span>
+      <h2 class="section-title">Inside <span>Qualityport</span></h2>
+      <p class="section-sub">From our materials and team to finished rooftops — a closer look at what we do.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img loading="lazy" src="gallery1.jpg" alt="Stone-coated roofing tiles display" />
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="gallery2.jpg" alt="Installation team working on a roof" />
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="gallery3.jpg" alt="Close-up of bond roof panel detail" />
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="gallery4.jpg" alt="Long-span aluminum sheets at warehouse" />
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="gallery5.jpg" alt="Roofing accessories — ridge cap and gutters" />
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="gallery6.jpg" alt="Completed Millano roof on a duplex" />
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="gallery7.jpg" alt="Water collection gutter system installed" />
+      </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="gallery8.jpg" alt="Roof inspection and quality check" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TESTIMONIALS ════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Client Reviews</span>
+      <h2 class="section-title">What Our <span>Customers Say</span></h2>
+      <p class="section-sub">Hundreds of homeowners and developers across Nigeria trust Qualityport Roofing.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-text">"Qualityport Roofing delivered exactly what we needed. Strong, beautiful, and no leaks after two rainy seasons! The team was professional and finished on schedule."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">EC</div>
+          <div>
+            <div class="testi-name">Emeka Chukwudi</div>
+            <div class="testi-role">Homeowner, Abuja</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-text">"I used their long-span aluminum sheets for my warehouse in Onitsha. Very affordable, quick delivery, and the quality is top-notch. Highly recommend!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">BO</div>
+          <div>
+            <div class="testi-name">Blessing Okafor</div>
+            <div class="testi-role">Property Developer, Onitsha</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-text">"The stone-coated tiles on my new home are absolutely beautiful. The 50-year guarantee gave us so much peace of mind. Clean job, no mess left behind."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">FA</div>
+          <div>
+            <div class="testi-name">Fatima Aliyu</div>
+            <div class="testi-role">Homeowner, Lagos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ QUOTE SECTION ════ -->
+<section id="quote">
+  <div class="container">
+    <div>
+      <span class="section-label">Free Estimate</span>
+      <h2 class="section-title">Request a <span>Free Quote</span></h2>
+      <p class="section-sub">Tell us about your project and we&#39;ll get back to you on WhatsApp — fast.</p>
+    </div>
+    <div class="quote-layout">
+
+      <!-- Left: contact info panel -->
+      <div class="quote-info">
+        <div class="quote-info-item">
+          <div class="quote-info-ico">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          </div>
+          <div>
+            <h4>Call Us Directly</h4>
+            <p><a href="tel:+2347031949248">+234 703 194 9248</a></p>
+          </div>
+        </div>
+        <div class="quote-info-item">
+          <div class="quote-info-ico">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/2347031949248?text=Hello%2C%20I%20need%20a%20roofing%20quote" target="_blank">Chat with us instantly</a></p>
+          </div>
+        </div>
+        <div class="quote-info-item">
+          <div class="quote-info-ico">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:qualityportstonecoat@gmail.com">qualityportstonecoat@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="quote-info-item">
+          <div class="quote-info-ico">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+          </div>
+          <div>
+            <h4>Business Hours</h4>
+            <p>Monday &#8211; Saturday: 9:00 AM &#8211; 5:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: the form -->
+      <div class="quote-form-card">
+        <h3>Get Your <span>Free Quote</span></h3>
+        <p>Fill in the details below and we&#39;ll send your request straight to our WhatsApp.</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="q-name">Full Name *</label>
+            <input type="text" id="q-name" placeholder="e.g. Chukwudi Emeka" />
+          </div>
+          <div class="form-group">
+            <label for="q-phone">Phone Number *</label>
+            <input type="tel" id="q-phone" placeholder="e.g. 0803 123 4567" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="q-location">Project Location *</label>
+          <input type="text" id="q-location" placeholder="e.g. Gwarinpa, Abuja" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="q-service">Service Needed *</label>
+            <select id="q-service">
+              <option value="" disabled selected>Select service</option>
+              <option>Stone-Coated Roofing Tiles</option>
+              <option>Long-Span Aluminum Sheets</option>
+              <option>Sales &amp; Installation of Water Collectors</option>
+              <option>Roofing Accessories</option>
+              <option>Roof Repair / Maintenance</option>
+              <option>Full Roof Installation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q-size">Estimated Roof Size</label>
+            <input type="text" id="q-size" placeholder="e.g. 150 sqm" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="q-message">Additional Details</label>
+          <textarea id="q-message" placeholder="Tell us more about your project &#8212; building type, timeline, any specific requirements&#8230;"></textarea>
+        </div>
+        <button class="btn btn-primary form-submit" onclick="submitQuote()">
+          <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Send via WhatsApp
+        </button>
+        <p class="form-note">Your details will open WhatsApp pre-filled &#8212; just tap Send.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ CTA BAND ════ -->
+<section id="cta-band">
+  <div class="container">
+    <div class="cta-inner">
+      <h2>Ready to Fix or Install Your Roof?</h2>
+      <p>Get a durable, long-lasting roofing solution today — call us or send a quick message on WhatsApp.</p>
+      <div class="cta-btns">
+        <a href="tel:+2347031949248" class="btn btn-white">
+          <svg style="width:18px;height:18px;fill:#F26A1B" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Call Now: +234 703 194 9248
+        </a>
+        <a href="https://wa.me/2347031949248?text=Hello%2C%20I%20need%20a%20roofing%20quote" class="btn btn-white-out" target="_blank">
+          <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CONTACT ════ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title">Contact <span>Us Today</span></h2>
+      <p class="section-sub">We're available 9AM – 5PM, Monday to Saturday. Reach us instantly on WhatsApp.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-ico">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          </div>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+2347031949248">+234 703 194 9248</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-ico">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/2347031949248?text=Hello%2C%20I%20need%20a%20roofing%20quote" target="_blank">Chat with us on WhatsApp</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-ico">
+            <svg viewBox="0 0 24 24" fill="var(--orange)"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:qualityportstonecoat@gmail.com">qualityportstonecoat@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-ico">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.326 3.608 1.301.975.975 1.24 2.242 1.301 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.326 2.633-1.301 3.608-.975.975-2.242 1.24-3.608 1.301-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.326-3.608-1.301-.975-.975-1.24-2.242-1.301-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.326-2.633 1.301-3.608.975-.975 2.242-1.24 3.608-1.301C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.053.072 5.197.157 3.355.65 2.014 1.991.673 3.332.157 5.197.072 7.053.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.947.085 1.857.6 3.7 1.942 5.041 1.341 1.341 3.184 1.857 5.041 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.947-.072c1.857-.085 3.7-.6 5.041-1.942 1.341-1.341 1.857-3.184 1.942-5.041.058-1.279.072-1.688.072-4.947s-.014-3.668-.072-4.947c-.085-1.857-.6-3.7-1.942-5.041C20.648.65 18.803.157 16.947.072 15.668.014 15.259 0 12 0z" fill="var(--orange)"/>
+              <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8z" fill="var(--orange)"/>
+              <circle cx="18.406" cy="5.595" r="1.44" fill="var(--orange)"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="https://www.instagram.com/qualityportroofing?igsh=MXF1bmwwcXh5amxlMg%3D%3D&utm_source=qr" class="social-link instagram" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.326 3.608 1.301.975.975 1.24 2.242 1.301 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.326 2.633-1.301 3.608-.975.975-2.242 1.24-3.608 1.301-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.326-3.608-1.301-.975-.975-1.24-2.242-1.301-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.326-2.633 1.301-3.608.975-.975 2.242-1.24 3.608-1.301C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.053.072 5.197.157 3.355.65 2.014 1.991.673 3.332.157 5.197.072 7.053.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.947.085 1.857.6 3.7 1.942 5.041 1.341 1.341 3.184 1.857 5.041 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.947-.072c1.857-.085 3.7-.6 5.041-1.942 1.341-1.341 1.857-3.184 1.942-5.041.058-1.279.072-1.688.072-4.947s-.014-3.668-.072-4.947c-.085-1.857-.6-3.7-1.942-5.041C20.648.65 18.803.157 16.947.072 15.668.014 15.259 0 12 0z" fill="white"/>
+                  <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8z" fill="white"/>
+                  <circle cx="18.406" cy="5.595" r="1.44" fill="white"/>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/qualityportroofing" class="social-link facebook" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://wa.me/2347031949248?text=Hello%2C%20I%20need%20a%20roofing%20quote" class="social-link whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-ico">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+          </div>
+          <div>
+            <h4>Business Hours</h4>
+            <p>Monday – Saturday: 9:00 AM – 5:00 PM</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-ico">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div>
+            <h4>Service Locations</h4>
+            <p>Abuja &nbsp;|&nbsp; Lagos &nbsp;|&nbsp; Onitsha</p>
+          </div>
+        </div>
+        <div class="contact-btns">
+          <a href="tel:+2347031949248" class="btn btn-navy">
+            <svg style="width:17px;height:17px;fill:white" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <a href="https://wa.me/2347031949248?text=Hello%2C%20I%20need%20a%20roofing%20quote" class="btn btn-wa" target="_blank">
+            <svg style="width:17px;height:17px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.1729458563495!2d7.352576300000001!3d9.138847600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddf6e6d20a339%3A0x233e3336f35e9524!2sQualityport%20Roofing!5e0!3m2!1sen!2sng!4v1774283781339!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <div class="logo-image"><img src="logo.jpg" alt="logo"></div>
+          <div class="logo-text">Qualityport<br><span>Roofing</span></div>          
+        </a>
+        <p>Nigeria's trusted supplier and installer of premium stone-coated roofing tiles and long-span aluminum roofing sheets.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+2347031949248">+234 703 194 9248</a></li>
+          <li><a href="mailto:qualityportstonecoat@gmail.com">qualityportstonecoat@gmail.com</a></li>
+          <li><a href="https://wa.me/2347031949248" target="_blank">WhatsApp</a></li>
+          <li>Abuja &bull; Lagos &bull; Onitsha</li>
+          <li>Mon – Sat: 9AM – 5PM</li>
+        </ul>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/qualityportroofing?igsh=MXF1bmwwcXh5amxlMg%3D%3D&utm_source=qr" class="instagram" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.326 3.608 1.301.975.975 1.24 2.242 1.301 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.326 2.633-1.301 3.608-.975.975-2.242 1.24-3.608 1.301-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.326-3.608-1.301-.975-.975-1.24-2.242-1.301-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.326-2.633 1.301-3.608.975-.975 2.242-1.24 3.608-1.301C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.053.072 5.197.157 3.355.65 2.014 1.991.673 3.332.157 5.197.072 7.053.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.947.085 1.857.6 3.7 1.942 5.041 1.341 1.341 3.184 1.857 5.041 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.947-.072c1.857-.085 3.7-.6 5.041-1.942 1.341-1.341 1.857-3.184 1.942-5.041.058-1.279.072-1.688.072-4.947s-.014-3.668-.072-4.947c-.085-1.857-.6-3.7-1.942-5.041C20.648.65 18.803.157 16.947.072 15.668.014 15.259 0 12 0z" fill="white"/>
+              <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8z" fill="white"/>
+              <circle cx="18.406" cy="5.595" r="1.44" fill="white"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/qualityportroofing" class="facebook" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://wa.me/2347031949248?text=Hello%2C%20I%20need%20a%20roofing%20quote" class="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Qualityport Roofing. All rights reserved.</span>
+      <span>Built for quality. Built to last.</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ════ FLOATING BUTTONS ════ -->
+<a href="https://wa.me/2347031949248?text=Hello%2C%20I%20need%20a%20roofing%20quote" class="float-wa" target="_blank" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<a href="tel:+2347031949248" class="float-call" title="Call Now">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+</a>
+
+<script>
+(function() {
+  'use strict';
+
+  /* ── Sticky navbar ───────────────────────────────── */
+  window.addEventListener('scroll', function() {
+    var nb = document.getElementById('navbar');
+    if (!nb) return;
+    if (window.scrollY > 50) {
+      nb.classList.add('scrolled');
+    } else {
+      nb.classList.remove('scrolled');
+    }
+  });
+
+  /* ── Mobile hamburger menu ───────────────────────── */
+  function toggleMenu() {
+    var menu = document.getElementById('mobileMenu');
+    var ham  = document.getElementById('ham');
+    if (!menu || !ham) return;
+    var isOpen = menu.classList.contains('open');
+    if (isOpen) {
+      menu.classList.remove('open');
+      ham.classList.remove('open');
+    } else {
+      menu.classList.add('open');
+      ham.classList.add('open');
+    }
+  }
+  window.toggleMenu = toggleMenu;
+
+  /* Close menu on outside click */
+  document.addEventListener('click', function(e) {
+    var menu   = document.getElementById('mobileMenu');
+    var ham    = document.getElementById('ham');
+    var navbar = document.getElementById('navbar');
+    if (!menu || !ham || !navbar) return;
+    if (menu.classList.contains('open') &&
+        !navbar.contains(e.target) &&
+        !menu.contains(e.target)) {
+      menu.classList.remove('open');
+      ham.classList.remove('open');
+    }
+  });
+
+  /* ── Quote form → WhatsApp ───────────────────────── */
+  function submitQuote() {
+    var name     = document.getElementById('q-name');
+    var phone    = document.getElementById('q-phone');
+    var location = document.getElementById('q-location');
+    var service  = document.getElementById('q-service');
+    var size     = document.getElementById('q-size');
+    var message  = document.getElementById('q-message');
+
+    if (!name || !phone || !location || !service) {
+      alert('Form fields not found. Please refresh and try again.');
+      return;
+    }
+
+    var n = name.value.trim();
+    var p = phone.value.trim();
+    var l = location.value.trim();
+    var s = service.value;
+    var sz = size ? size.value.trim() : '';
+    var msg = message ? message.value.trim() : '';
+
+    if (!n || !p || !l || !s) {
+      alert('Please fill in all required fields: Name, Phone, Location, and Service.');
+      return;
+    }
+
+    var NL   = '%0A';
+    var B    = '*';
+    var text = B + 'ROOFING QUOTE REQUEST' + B + NL + NL;
+    text += B + 'Name:' + B + ' ' + n + NL;
+    text += B + 'Phone:' + B + ' ' + p + NL;
+    text += B + 'Location:' + B + ' ' + l + NL;
+    text += B + 'Service:' + B + ' ' + s + NL;
+    if (sz)  { text += B + 'Roof Size:' + B + ' ' + sz  + NL; }
+    if (msg) { text += B + 'Details:' + B + ' '   + msg + NL; }
+    text += NL + '_Sent from Qualityport Roofing website_';
+
+    window.open('https://wa.me/2347031949248?text=' + text, '_blank');
+  }
+  window.submitQuote = submitQuote;
+
+  /* ── Carousel ─────────────────────────────────────── */
+  function updateCarousel(carousel, newIndex) {
+    if (!carousel) return;
+    var track = carousel.querySelector('.carousel-track');
+    if (!track) return;
+    var slides = track.querySelectorAll('.carousel-slide');
+    var total  = slides.length;
+    if (total === 0) return;
+    newIndex = ((newIndex % total) + total) % total;
+    carousel.dataset.index    = newIndex;
+    track.style.transform     = 'translateX(-' + (newIndex * 100) + '%)';
+    var dots = carousel.querySelectorAll('.carousel-dot');
+    for (var i = 0; i < dots.length; i++) {
+      if (i === newIndex) {
+        dots[i].classList.add('active');
+      } else {
+        dots[i].classList.remove('active');
+      }
+    }
+  }
+
+  function moveCarousel(btn, dir) {
+    if (!btn) return;
+    var c = btn.closest('.carousel');
+    if (!c) return;
+    updateCarousel(c, parseInt(c.dataset.index || 0) + dir);
+  }
+  window.moveCarousel = moveCarousel;
+
+  function goToSlide(dot, idx) {
+    if (!dot) return;
+    var c = dot.closest('.carousel');
+    if (!c) return;
+    updateCarousel(c, idx);
+  }
+  window.goToSlide = goToSlide;
+
+  /* ── Scroll reveal ─────────────────────────────────── */
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function(entries) {
+      for (var j = 0; j < entries.length; j++) {
+        if (entries[j].isIntersecting) {
+          entries[j].target.style.opacity   = '1';
+          entries[j].target.style.transform = 'translateY(0)';
+        }
+      }
+    }, { threshold: 0.1 });
+
+    var selectors = [
+      '.service-card', '.why-card', '.testi-card',
+      '.gallery-item', '.contact-item', '.roof-card',
+      '.acc-card', '.about-pillar'
+    ];
+    var revealEls = document.querySelectorAll(selectors.join(', '));
+    for (var ri = 0; ri < revealEls.length; ri++) {
+      revealEls[ri].style.opacity    = '0';
+      revealEls[ri].style.transform  = 'translateY(32px)';
+      revealEls[ri].style.transition =
+        'opacity 0.55s ' + (ri * 0.07) + 's ease, ' +
+        'transform 0.55s ' + (ri * 0.07) + 's ease';
+      revealObserver.observe(revealEls[ri]);
+    }
+  }
+
+})();
+</script>
+</body>
+</html>
